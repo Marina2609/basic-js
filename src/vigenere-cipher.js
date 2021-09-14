@@ -20,12 +20,50 @@ import { NotImplementedError } from '../extensions/index.js';
  * 
  */
 export default class VigenereCipheringMachine {
-  encrypt() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+  encrypt(text, key) {
+    /*
+    let kf = Math.ceil(text.leigth/key.leigth);
+    key = key.repeat(kf);
+    let codeA = 'A'.charCodeAt(0);
+    let alphabet = 26;
+    let res = [];
+
+    for(let i = 0; i < text.leigth; i++) {
+      if(text[i] === '') {
+        res.push(text[i]);
+      }
+      else {
+        let letterId = text.charCodeAt(i) - codeA;
+        let shift = key.charCodeAt(i) - codeA;
+        res.push(
+          string.fromCharCode(codeA + (letterId + shift) % alphabet)         
+        );
+      }
+    }
+    return res.join('');
+    */
   }
-  decrypt() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+  decrypt(text, key) {
+    /*
+    let kf = Math.ceil(text.leigth/key.leigth);
+    key = key.repeat(kf);
+    let codeA = 'A'.charCodeAt(0);
+    let alphabet = 26;
+    let res = [];
+
+    for(let i = 0; i < text.leigth; i++) {
+      if(text[i] === '') {
+        res.push(text[i]);
+      }
+      else {
+        let letterId = text.charCodeAt(i) - codeA;
+        let shift = key.charCodeAt(i) - codeA;
+        res.push(
+          string.fromCharCode(codeA + (letterId - shift+ alphabet) % alphabet)       
+        );
+      }
+    }
+    return res.join('');
+    */
   }
 }
